@@ -1,0 +1,12 @@
+{
+  "name": "inteligencia-sdr",
+  "version": "1.0.0",
+  "description": "A inteligência de vendas de um agente SDR de IA no WhatsApp: método, prompt, travas em código e os erros que já corrigimos. Funciona com qualquer modelo e qualquer estrutura.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test referencia/*.test.mjs",
+    "varredura": "node ferramentas/varredura.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
