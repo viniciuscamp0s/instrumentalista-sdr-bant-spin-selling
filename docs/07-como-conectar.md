@@ -14,13 +14,14 @@
 | Recusa | PERDIDO sem IA | `referencia/recusa.mjs` |
 | Mídia | transcrição e leitura | `docs/03-midia.md` + `prompt/leitura-de-midia.md` |
 | Follow-up | mensagens prontas, cadência, freios | `docs/04-follow-up.md` |
+| Ensaio e /reset | testar pelo WhatsApp e lapidar | `docs/08-ensaio-e-lapidacao.md` + `referencia/ensaio.mjs` |
 
 Os arquivos de `referencia/` são JavaScript puro, sem dependência, Node 20 ou mais. Copie, importe ou traduza
 para a sua linguagem. Os testes (`npm test`) são a especificação: a sua versão passa nos mesmos casos.
 
 ## Código próprio (Node, Python, qualquer linguagem)
 
-1. Webhook da API de WhatsApp grava a mensagem e responde 200 rápido.
+1. Webhook da API de WhatsApp grava a mensagem e responde 200 rápido. Antes de tudo, `decidirNoEnsaio`: `/reset` de número de teste apaga a conversa; em ensaio, número que não é de teste é ignorado.
 2. Um job a cada 2 segundos pega as conversas com pergunta esperando e chama `horaDeResponder`.
 3. Monta o prompt (prefixo fixo + parte variável), chama o modelo com o esquema de saída.
 4. `conferirResposta`. Reprovou: segunda tentativa com `instrucaoDeCorrecao`. Reprovou de novo: humano.
@@ -51,7 +52,8 @@ SDR no meu projeto seguindo docs/02-motor.md, usando prompt/sistema.md como prom
 como saída e as funções de referencia/ (ou a tradução delas para a linguagem do projeto) com os mesmos testes.
 Comece me perguntando: qual API de WhatsApp eu uso, qual provedor de IA, onde gravo as conversas e qual política
 de handoff (A ou B). Monte a ficha comigo campo por campo, a partir de prompt/ficha-da-empresa.md, sem deixar
-placeholder. O agente nasce desligado e em modo de teste.
+placeholder. O agente nasce desligado e em modo de teste, com o /reset de docs/08-ensaio-e-lapidacao.md
+funcionando, e no fim me mande o texto de orientação do ensaio que está nesse arquivo.
 ```
 
 ## Num CRM que já tem agente de IA

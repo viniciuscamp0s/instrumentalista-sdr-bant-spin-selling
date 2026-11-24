@@ -86,7 +86,8 @@
 - "..."
 
 ## Configuração do sistema
-> Não vai ao prompt: o seu código lê. modo (teste ou real), números de teste, teto mensal em dólar, destino dos
+> Não vai ao prompt: o seu código lê. modo (ensaio ou real), números de teste (os únicos com /reset, nunca o
+> número que envia os avisos), teto mensal em dólar, destino dos
 > avisos, política de handoff (A: fala da equipe é contexto, B: equipe escreveu, agente para).
 ```
 

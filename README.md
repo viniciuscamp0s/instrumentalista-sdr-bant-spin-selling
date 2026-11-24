@@ -17,6 +17,8 @@ O que você leva:
   escondida em imagem.
 - **Barato:** menos de US$ 0,001 por resposta no modelo que adotamos depois de um teste cego (custo 95% menor
   e nota maior que o modelo grande que usávamos). Follow-up com custo zero de IA.
+- **Ensaio pelo próprio WhatsApp:** modo de teste só para os seus números e `/reset` na conversa para recomeçar do
+  zero e testar quantos cenários quiser, ou lapidar direto em produção mandando o print do que deveria ser diferente.
 - **Não erra o que já erramos:** mais de 170 incidentes reais viraram regra de prompt, trava de código ou item de
   checklist.
 
@@ -32,6 +34,7 @@ O que você leva:
 | **Os erros e as travas (leia antes de ligar)** | [`docs/05-erros-que-ja-cometemos.md`](docs/05-erros-que-ja-cometemos.md) |
 | Escolher o modelo e manter barato | [`docs/06-modelo-e-custo.md`](docs/06-modelo-e-custo.md) |
 | Conectar no N8N, Make, código próprio ou CRM | [`docs/07-como-conectar.md`](docs/07-como-conectar.md) |
+| Testar pelo próprio WhatsApp com `/reset` e lapidar | [`docs/08-ensaio-e-lapidacao.md`](docs/08-ensaio-e-lapidacao.md) |
 
 ## Em 5 minutos, com um agente de código
 
@@ -78,9 +81,10 @@ JavaScript puro, sem dependência, Node 20 ou mais:
 | [`referencia/recusa.mjs`](referencia/recusa.mjs) | recusa e pedido para sair por palavras, com a trava "preço e dúvida nunca são recusa" |
 | [`referencia/regras.mjs`](referencia/regras.mjs) | etapa só para a frente, BANT, MQL/SQL, tags, nome do lead |
 | [`referencia/ritmo.mjs`](referencia/ritmo.mjs) | quando responder, quando descartar, "digitando", espera em falha |
+| [`referencia/ensaio.mjs`](referencia/ensaio.mjs) | modo ensaio só para números de teste e o `/reset` que apaga a conversa de teste |
 
 ```bash
-npm test   # 13 testes, cada um é um erro real que um agente cometeu
+npm test   # 16 testes, cada um é um erro real que um agente cometeu ou uma trava do ensaio
 ```
 
 ## O que não está aqui

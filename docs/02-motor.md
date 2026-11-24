@@ -99,7 +99,7 @@ explícita** (botão, ou o próprio agente chamando o humano), nunca por efeito 
 | Teto mensal por empresa | conferido antes de cada chamada; aviso a 80%, para a 100% | custo nunca é surpresa |
 | Falha técnica | espera 30 s, 60 s, 120 s; na 3ª, humano | não martelar a API caída nem deixar o lead sem ninguém |
 | Resposta torta que a API já cobrou | direto ao humano, sem nova tentativa paga | não pagar duas vezes pelo mesmo erro |
-| Modo ensaio | o agente nasce desligado e só responde a números de teste | nada chega a lead real sem ser visto antes |
+| Modo ensaio | o agente nasce desligado e só responde a números de teste, com `/reset` para recomeçar (`docs/08-ensaio-e-lapidacao.md`) | nada chega a lead real sem ser visto antes |
 
 ## Teste com o serviço real, não só com o simulado
 

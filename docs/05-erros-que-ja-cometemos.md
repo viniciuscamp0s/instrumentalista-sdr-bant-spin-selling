@@ -99,7 +99,8 @@
 
 ## Antes de ligar em produção (checklist)
 
-- [ ] O agente nasce desligado e em modo de teste, respondendo só a números de teste.
+- [ ] O agente nasce desligado e em modo de teste, respondendo só a números de teste, com `/reset` funcionando
+      (`docs/08-ensaio-e-lapidacao.md`): caminho padrão primeiro, depois os cenários de exceção.
 - [ ] Os 13 testes de `referencia/` passam na sua implementação (ou nas suas versões das travas).
 - [ ] Você mandou: 3 mensagens seguidas, um áudio de 1 minuto, um print, um PDF, "é robô?", "quanto custa?" logo de
       cara, "não tenho interesse", "não, é a primeira vez", e um "ok" solto depois de uma pergunta do agente.
