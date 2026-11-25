@@ -47,7 +47,7 @@ para a sua linguagem. Os testes (`npm test`) são a especificação: a sua vers�
 Abra o agente na pasta do seu projeto e cole:
 
 ```text
-Leia este repositório (inteligencia-sdr) inteiro: README, docs, prompt e referencia. Depois implemente o agente
+Leia este repositório (instrumentalista-sdr-bant-spin-selling) inteiro: README, docs, prompt e referencia. Depois implemente o agente
 SDR no meu projeto seguindo docs/02-motor.md, usando prompt/sistema.md como prompt fixo, prompt/saida.schema.json
 como saída e as funções de referencia/ (ou a tradução delas para a linguagem do projeto) com os mesmos testes.
 Comece me perguntando: qual API de WhatsApp eu uso, qual provedor de IA, onde gravo as conversas e qual política

@@ -1,4 +1,4 @@
-# inteligencia-sdr
+# instrumentalista-sdr-bant-spin-selling
 
 **A inteligência de vendas de um agente SDR de IA no WhatsApp, pronta para conectar em qualquer estrutura.**
 
@@ -41,7 +41,7 @@ O que você leva:
 Clone o repositório e, na pasta do seu projeto, peça ao Claude Code ou ao Codex:
 
 ```text
-Leia o repositório inteligencia-sdr inteiro e implemente o agente SDR no meu projeto seguindo
+Leia o repositório instrumentalista-sdr-bant-spin-selling inteiro e implemente o agente SDR no meu projeto seguindo
 docs/07-como-conectar.md. Monte a ficha da minha empresa comigo, campo por campo, sem placeholder.
 O agente nasce desligado e em modo de teste.
 ```
